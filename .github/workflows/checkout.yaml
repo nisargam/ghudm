@@ -16,7 +16,6 @@ jobs:
           git remote add origin "https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git"
           git fetch origin
           git checkout main
-          git config list
           pwd
           ls -a
           echo $GITHUB_SHA
