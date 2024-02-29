@@ -4,6 +4,8 @@ on: [push]
 jobs:
   testing-wf-commands:
     runs-on: ubuntu-latest
+    env:
+      MY_NAME: "Mona The Octocat"
     steps:
       - name: Setting an error message
         run: echo "::error::Missing semicolon"
@@ -24,3 +26,5 @@ jobs:
         run: echo "::add-mask::Secret String"
       - name: Echo a secret
         run: echo "Secret String"
+      - name: bash-version
+        run: echo "::add-mask::$MY_NAME"
