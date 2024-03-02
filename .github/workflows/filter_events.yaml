@@ -1,4 +1,4 @@
-name: Repository Events
+name: Repository Events filter
 on:
   push:
     branches:
